@@ -1,3 +1,4 @@
+Uso de las librerias
 #include <stdio.h>
 #include <string.h>
 #define MAX 100
