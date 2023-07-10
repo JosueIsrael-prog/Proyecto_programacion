@@ -1,4 +1,4 @@
-Uso de las librerias
+/*Uso de las librerias*/
 #include <stdio.h>
 #include <string.h>
 #define MAX 100
@@ -35,12 +35,12 @@ Orden *crearOrden()
     printf("Ingrese la marca de su computadora: ");
     fgets(o->marca, MAX, stdin);
     o->marca[strcspn(o->marca, "\n")] = 0;
-Hasta la linea treinta y siete se definio una estructura de orden, que contiene ordenes de trabajo
+/*Hasta la linea treinta y siete se definio una estructura de orden, que contiene ordenes de trabajo*/
 
     printf("Ingrese el modelo de su computadora: ");
     fgets(o->modelo, MAX, stdin);
     o->modelo[strcspn(o->modelo, "\n")] = 0;
-
+A partir de la caurenta 
     printf("Ingrese alguna observacion a tener en cuenta para el servicio de su computadora: ");
     fgets(o->observaciones, MAX, stdin);
     o->observaciones[strcspn(o->observaciones, "\n")] = 0;
@@ -65,7 +65,7 @@ void guardarOrden(Orden *o)
         printf("Error al abrir el archivo\n");
         return;
     }
-
+/*Presentacion de un menu para una nueva orden de trabajo*/
     fprintf(file, "%s,%s,%s,%s,%s,%s,%d,$%.2f\n",
             o->nombre,
             o->direccion,
