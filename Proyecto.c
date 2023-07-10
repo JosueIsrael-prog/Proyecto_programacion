@@ -32,10 +32,10 @@ Orden *crearOrden()
     printf("Ingrese su cedula: ");
     fgets(o->cedula, MAX, stdin);
     o->cedula[strcspn(o->cedula, "\n")] = 0;
-
     printf("Ingrese la marca de su computadora: ");
     fgets(o->marca, MAX, stdin);
     o->marca[strcspn(o->marca, "\n")] = 0;
+Hasta la linea treinta y siete se definio una estructura de orden, que contiene ordenes de trabajo
 
     printf("Ingrese el modelo de su computadora: ");
     fgets(o->modelo, MAX, stdin);
